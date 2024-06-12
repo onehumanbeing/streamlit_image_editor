@@ -21,5 +21,5 @@ if origin_file and mask_file and prompt and prompt != "":
         n=1,
         size="1024x1024"
     )
-    image_url = response['data'][0]['url']
+    image_url = response.data[0].url
     st.image(image_url, caption="Edited image", use_column_width=True)
