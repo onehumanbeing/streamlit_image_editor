@@ -7,7 +7,7 @@ client = OpenAI(api_key=openai_api_key, base_url=gpt_base_url)
 st.title("💬 DALL-E 2 Image Editor")
 origin_file = st.file_uploader("Origin file", type=("png"))
 mask_file = st.file_uploader("Mask file", type=("png"))
-prompt = st.text_input("Prompt", "After 100 days of fitness, I am thinner and have more muscles.")
+prompt = st.text_input("Prompt", "thinner, muscles, non text")
 
 if origin_file and mask_file and prompt and prompt != "":
     # st.image(origin_file, caption="Origin image", use_column_width=True)
